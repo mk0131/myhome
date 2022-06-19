@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.thymeleaf.util.StringUtils;
 
+import javax.sql.DataSource;
 import java.util.List;
 
 // resfulapi 이용해서 CRUD 해보기 , PostMan 사용하면 편하다
@@ -14,6 +15,7 @@ import java.util.List;
 public class BoardApiController {
     @Autowired
     private BoardRepository repository;
+
 
 
     // Aggregate root
